@@ -1,0 +1,184 @@
+/* Сброс базовых стилей */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Общие стили для body */
+body {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    background: url('фон1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0 20px;
+}
+
+/* Стили для логотипа */
+.logo {
+    position: absolute; /* Фиксируем логотип */
+    top: 20px; /* Расстояние от верхнего края */
+    left: 20px; /* Расстояние от левого края */
+    width: 100px; /* Ширина логотипа, можно настроить */
+    height: auto; /* Автоматическое подстраивание высоты */
+}
+
+/* Стили для header */
+header {
+    background: url('фон2.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+.contact-button {
+    position: fixed;
+    top: 20px; /* Расстояние от верхнего края */
+    right: 20px; /* Расстояние от правого края */
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 1000; /* Обеспечивает, чтобы кнопка была сверху */
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Стили для main */
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 70px 0 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Стили для раздела услуг */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для портфолио */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    color: #666;
+}
+
+/* Стили для социальных сетей */
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
