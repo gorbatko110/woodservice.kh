@@ -25,6 +25,19 @@ body {
     height: auto;
 }
 
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .logo {
+        width: 60px; /* Уменьшаем размер логотипа */
+        top: 10px;
+        left: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка */
+    }
+}
+
     header h1 {
         font-size: 1.5rem; /* Уменьшаем размер заголовка */
     }
